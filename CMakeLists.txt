@@ -36,9 +36,9 @@ if (APPLE)
 endif()
 
 if(MSVC)
-    list (APPEND CMAKE_CXX_FLAGS " -std=c++11 -O3 ")
+    set(APPEND CMAKE_CXX_FLAGS " -std=c++11 -O3 ")
 else()
-    list (APPEND CMAKE_CXX_FLAGS " -std=c++11 -O3 -Wall -Werror ")
+    set(APPEND CMAKE_CXX_FLAGS " -std=c++11 -O3 -Wall -Werror ")
 endif()
 
 # Check for cryptopp (static)
